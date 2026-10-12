@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b30d0d;
+    color: #fa0000;
+}
+.container {
+    color: aqua;
+}
+
+footer {
+    background-color: #0767f8;
+    color: #db0cca;
+    text-align: center;
+    padding: 10px;
+}
