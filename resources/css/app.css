@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #dc0404,#d76609,#1b1d1b);
+    color: black;
+    min-height: 100vh;
+}
+.container {
+    color: aqua;
+}
+
+._header_ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Важно: выравнивает логотип и панель по одной линии */
+    margin: 20px 2%;
+    color: #666665;
+}
+/* ==========================================================================
+   2. КОМПОНЕНТ: логотип (.nav)
+   ========================================================================== */
+._header_ h1 {
+    border: 5px solid #a59d83;
+    background-color: #d1be0e;
+    border-radius: 40px;
+}
+/* ==========================================================================
+   3. КОМПОНЕНТ: НАВИГАЦИОННАЯ ПАНЕЛЬ (.nav)
+   ========================================================================== */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border: 2px solid #a59d83;
+    padding: 4px 10px; 
+    background-color: #d1be0e; 
+    border-radius: 50px;
+    gap: 10px; 
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    
+    padding: 2px 10px; 
+    border-radius: 20px;
+    
+
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /*!!! */
+    color: #ffffff; 
+}
+
+p {
+    color: #cbd5e1;
+}
+footer {
+    color: #e2e8f0;
+    text-align: center;
+}

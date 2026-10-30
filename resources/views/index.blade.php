@@ -6,7 +6,8 @@
     <meta name="description" content="Уютный книжный магазин. Найдите лучшие художественные и популярные книги на любой вкус.">
     <title>Главная — Книжный магазин</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    @vite(['resources/css/index.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
+
 
 </head>
 <body>

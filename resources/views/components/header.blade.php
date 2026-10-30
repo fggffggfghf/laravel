@@ -1,7 +1,7 @@
 <header class="_header_">
     <h1>Книжный магазин</h1>
 
-    <nav>
+    <nav class="nav">
         <a href="{{ route('index') }}">Главная</a>
         <a href="{{ route('category') }}">Категории</a>
         <a href="{{ route('author') }}">Автор</a>

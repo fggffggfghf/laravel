@@ -17,3 +17,7 @@ Route::get('/author', function () {
 Route::get('/admin', function () {
     return view('admin');
 })->name('admin');
+
+Route::post('/author', function () {
+    return view('author');
+})->name('author');

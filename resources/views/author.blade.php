@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Автор - Книжный магазин</title>
-    @vite(['resources/css/index.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
+
 
 </head>
 
@@ -15,8 +16,22 @@
     <main>
         <h1>Автор</h1>
 
-        <p>В этом разделе автор сможет добавлять и редактировать информацию о книгах.</p>
-        <p>Функция добавления книг будет реализована позже.</p>
+        <form action="/author" method="POST">
+            @csrf
+            <label for="name">Имя автора</label>
+            <input type="text" placeholder="Введите имя автора"  name="name" id="name">
+            
+            <label for="year ">год</label>
+            <input type="number" placeholder="Введите год создания"  name="year" id="year">
+
+            <label for="Title ">название книги</label>
+            <input type="text" placeholder="Введите название книги"  name="Title " id="Title ">
+
+            <label for="description">Описание</label>
+            <textarea name="description" id="description" placeholder="введите опимание"></textarea>
+
+            <button type="submit">отправить</button>
+        </form>
     </main>
 
     <x-footer />
