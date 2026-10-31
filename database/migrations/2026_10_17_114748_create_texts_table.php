@@ -14,6 +14,11 @@ return new class extends Migration
         Schema::create('texts', function (Blueprint $table) {
             $table->id();
             
+            $table->string('name');
+            $table->integer('year');
+            $table->string('title');
+            $table->string('description');
+            
             $table->timestamps();
         });
     }

@@ -24,7 +24,7 @@
             <label for="year ">год</label>
             <input type="number" placeholder="Введите год создания"  name="year" id="year">
 
-            <label for="Title ">название книги</label>
+            <label for="title ">название книги</label>
             <input type="text" placeholder="Введите название книги"  name="Title " id="Title ">
 
             <label for="description">Описание</label>

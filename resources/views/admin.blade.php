@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Админ - Книжный магазин</title>
     @vite(['resources/css/app.css'])
-
-
 </head>
 
 <body>
 
     <x-header />
 
-    <main class=''>
+    <main>
         <h1>Панель администратора</h1>
 
         <p>Управление книгами в магазине.</p>
@@ -21,9 +19,19 @@
         <h2>Список книг</h2>
 
         <ul>
-            <li>Хоббит - Изменить | Удалить</li>
-            <li>Гарри Поттер - Изменить | Удалить</li>
-            <li>1984 - Изменить | Удалить</li>
+            @forelse ($texts as $text)
+                <li>
+                    <strong>{{ $text->title }}</strong>
+                    — Автор: {{ $text->name }}
+                    — Год: {{ $text->year }}
+
+                    <p>{{ $text->description }}</p>
+
+                    Изменить | Удалить
+                </li>
+            @empty
+                <li>Книг пока нет.</li>
+            @endforelse
         </ul>
     </main>
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TextController;
 
 Route::get('/', function () {
     return view('index');
@@ -10,14 +11,13 @@ Route::get('/category', function () {
     return view('category');
 })->name('category');
 
+// Открытие формы добавления книги
 Route::get('/author', function () {
     return view('author');
 })->name('author');
 
-Route::get('/admin', function () {
-    return view('admin');
-})->name('admin');
+// Сохранение книги в базу данных
+Route::post('/author', [TextController::class, 'store']);
 
-Route::post('/author', function () {
-    return view('author');
-})->name('author');
+// Открытие админки со списком книг
+Route::get('/admin', [TextController::class, 'index'])->name('admin');
